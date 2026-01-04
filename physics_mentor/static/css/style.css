@@ -91,3 +91,152 @@ body {
     padding: 20px;
     background: #050914;
 }
+.page-container {
+  padding: 90px 8%;
+}
+
+
+
+/* ===== Courses Page v2 (Premium) ===== */
+
+.courses-wrap {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 60px 0;
+}
+
+.courses-header {
+  text-align: center;
+  max-width: 760px;
+  margin: 0 auto 50px auto;
+}
+
+.section-label {
+  color: #22d3ee;
+  font-weight: 700;
+  letter-spacing: 2px;
+  font-size: 12px;
+  margin-bottom: 12px;
+}
+
+.courses-title {
+  font-size: 52px;
+  font-weight: 800;
+  line-height: 1.05;
+  margin: 0 0 16px 0;
+}
+
+.courses-title span {
+  color: #22d3ee;
+}
+
+.courses-subtitle {
+  color: #9ca3af;
+  line-height: 1.7;
+  margin: 0;
+  font-size: 16px;
+}
+
+.courses-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 26px;
+}
+
+@media (max-width: 900px) {
+  .courses-grid {
+    grid-template-columns: 1fr;
+  }
+  .courses-title {
+    font-size: 40px;
+  }
+}
+
+.course-card {
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.07);
+  border-radius: 18px;
+  padding: 26px;
+  box-shadow: 0 18px 45px rgba(0, 0, 0, 0.35);
+}
+
+.course-top {
+  display: flex;
+  justify-content: flex-start;
+  margin-bottom: 14px;
+}
+
+.tag {
+  display: inline-block;
+  padding: 6px 12px;
+  border-radius: 999px;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.tag-blue {
+  background: rgba(34, 211, 238, 0.15);
+  color: #22d3ee;
+  border: 1px solid rgba(34, 211, 238, 0.3);
+}
+
+.tag-yellow {
+  background: rgba(251, 191, 36, 0.15);
+  color: #fbbf24;
+  border: 1px solid rgba(251, 191, 36, 0.3);
+}
+
+.course-name {
+  font-size: 26px;
+  margin: 0 0 10px 0;
+}
+
+.course-desc {
+  color: #9ca3af;
+  margin: 0 0 18px 0;
+  line-height: 1.6;
+}
+
+.course-points {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 18px 0;
+}
+
+.course-points li {
+  position: relative;
+  padding-left: 18px;
+  margin: 10px 0;
+  color: #e5e7eb;
+  line-height: 1.4;
+}
+
+.course-points li::before {
+  content: "•";
+  position: absolute;
+  left: 0;
+  top: 0;
+  color: #22d3ee;
+  font-weight: 900;
+}
+
+.course-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin: 0 0 18px 0;
+}
+
+.course-meta span {
+  font-size: 12px;
+  padding: 6px 10px;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  color: #d1d5db;
+  white-space: nowrap;
+}
+
+.course-cta {
+  margin-top: 8px;
+}
